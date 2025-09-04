@@ -9,7 +9,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main Navigation">
     <ul>
       <li><a href="#tips">Tips</a></li>
       <li><a href="#meal-plan">Meal Plan</a></li>
@@ -83,14 +83,15 @@
 
     <!-- Audio -->
     <h3>Meditation Music</h3>
-    <audio controls autoplay loop preload="metadata">
+    <audio controls autoplay loop preload="metadata" aria-label="Meditation background music">
       <source src="media/sample-audio.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
 
     <!-- Video -->
     <h3>Healthy Lifestyle Video</h3>
-    <video controls autoplay loop preload="metadata" class="responsive-video" poster="media/healthy.jpg">
+    <video controls autoplay loop preload="metadata" class="responsive-video" 
+           poster="media/healthy.jpg" aria-label="Healthy lifestyle video about eating well">
       <source src="media/sample-video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -104,34 +105,38 @@
         <legend>Personal Information</legend>
 
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" 
+               required minlength="3" aria-label="Full Name"><br><br>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" 
+               required aria-label="Email Address"><br><br>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+        <input type="number" id="age" name="age" min="10" max="100" 
+               placeholder="Enter your age" required aria-label="Age"><br><br>
       </fieldset>
 
       <fieldset>
         <legend>Preferences</legend>
 
         <label for="goal">Health Goal:</label>
-        <select id="goal" name="goal" required>
+        <select id="goal" name="goal" required aria-label="Health Goal">
           <option value="">--Choose one--</option>
           <option value="fitness">Improve Fitness</option>
           <option value="nutrition">Better Nutrition</option>
           <option value="mindfulness">Mindfulness</option>
         </select><br><br>
 
-        <label>Subscribe to newsletter:</label>
-        <input type="checkbox" name="newsletter" value="yes" checked><br><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked aria-label="Subscribe to newsletter">
+        <label for="newsletter">Subscribe to newsletter</label><br><br>
 
         <label for="password">Create Password:</label>
-        <input type="password" id="password" name="password" required pattern=".{6,}" placeholder="Min 6 characters"><br><br>
+        <input type="password" id="password" name="password" required 
+               pattern=".{6,}" placeholder="Min 6 characters" aria-label="Password"><br><br>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <button type="submit" aria-label="Submit Form">Submit</button>
     </form>
   </section>
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Living Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#meal-plan">Meal Plan</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#form">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Healthy Living Guide</h1>
+    <p>Simple habits for a better, balanced life.</p>
+  </header>
+
+  <!-- Section 1: Tips -->
+  <section id="tips">
+    <h2>Healthy Lifestyle Tips</h2>
+    <ul>
+      <li>Eat more fresh fruits and vegetables</li>
+      <li>Exercise at least 30 minutes daily</li>
+      <li>Stay hydrated – drink 8 glasses of water</li>
+      <li>Sleep 7–8 hours every night</li>
+      <li>Practice mindfulness or meditation</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section id="meal-plan">
+    <h2>Sample Meal Plan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Food</th>
+          <th>Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Breakfast</td>
+          <td>Oatmeal with fruits</td>
+          <td>350</td>
+        </tr>
+        <tr>
+          <td>Lunch</td>
+          <td>Grilled chicken salad</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Snack</td>
+          <td>Greek yogurt with honey</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Dinner</td>
+          <td>Baked salmon with veggies</td>
+          <td>600</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section id="media">
+    <h2>Health & Fitness Media</h2>
+
+    <!-- Image -->
+    <figure>
+      <img src="media/healthy.jpg" alt="Healthy food" class="responsive-img">
+      <figcaption>Fresh vegetables and fruits are the foundation of good health.</figcaption>
+    </figure>
+
+    <!-- Audio -->
+    <h3>Meditation Music</h3>
+    <audio controls autoplay loop preload="metadata">
+      <source src="media/sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <h3>Healthy Lifestyle Video</h3>
+    <video controls autoplay loop preload="metadata" class="responsive-video" poster="media/healthy.jpg">
+      <source src="media/sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 4: Form -->
+  <section id="form">
+    <h2>Join Our Healthy Living Community</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="goal">Health Goal:</label>
+        <select id="goal" name="goal" required>
+          <option value="">--Choose one--</option>
+          <option value="fitness">Improve Fitness</option>
+          <option value="nutrition">Better Nutrition</option>
+          <option value="mindfulness">Mindfulness</option>
+        </select><br><br>
+
+        <label>Subscribe to newsletter:</label>
+        <input type="checkbox" name="newsletter" value="yes" checked><br><br>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required pattern=".{6,}" placeholder="Min 6 characters"><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Healthy Living Guide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
